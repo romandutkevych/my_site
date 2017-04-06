@@ -1,0 +1,288 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body{
+	max-width: 1024px;
+	margin: 0 auto;
+}
+html,body {
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	background:#EAECF0; 
+}
+
+header{
+	height:150px;
+	margin: 1px 1px 1px 1px;
+	padding: 20px 1px 1px 1px;
+}
+
+#logo a {
+    padding-top:0px;
+	margin-left: 100px;
+	font-weight: bold;
+	text-decoration: none;
+	font-size: 46px;
+	text-shadow: 0 1px 0 white;
+	color: #373e47;
+}
+
+nav {
+    padding-top: 70px;
+	overflow: hidden;
+	
+}
+
+nav ul{
+	display: flex;
+	justify-content:center;
+}
+
+nav li {
+	list-style: none;
+	flex-direction:row;
+}
+nav li a {
+	font-size: 20px;
+	font-weight: bold;
+	text-decoration: none;
+	padding: 10px;
+	color: #143567;
+	text-shadow: 0 1px 0 white;
+}
+
+nav li a:hover {
+	color: #de0202;
+}
+
+ #hamburger{
+	display: none;
+}
+
+
+#why_main{
+	display: flex;
+	justify-content:center;
+    padding-top:4px;
+    height:300px;
+}
+
+
+.why_we{
+	 justify-content:space-between;
+     width:150px; 
+     height:150px; 
+     margin: 50px;
+     padding-top:60px;
+}
+
+#main h1{
+	padding-top: 150px;
+	text-align: center;
+}
+
+#toning{
+	line-height: 1.5;
+	padding: 30px;
+}
+
+#toning h1{
+	text-align: center;
+}
+
+#toning img{
+	width: 300px;
+	height: 222px;
+}
+
+#anti_grav{
+    line-height: 1.5;
+	padding: 30px;
+}
+
+#anti_grav h1{
+	text-align: center;
+}
+
+#glass{
+    line-height: 1.5;
+	padding: 30px;
+}
+
+#glass h1{
+	text-align: center;
+}
+
+#our_work{
+    line-height: 1.5;
+	padding: 30px;
+	border-bottom-style: solid;
+	text-align: center;
+}
+
+#our_work h1{
+	text-align: center;
+}
+
+#table{
+	display: flex;
+    align-items: center;
+    justify-content: center; 
+    overflow: auto; 
+    padding-top: 50px;
+    width: 100%;
+    height:auto;
+}
+
+#table table{
+	display: block;
+}
+
+
+figure{
+    padding-top: 50px;
+}
+
+#our_work img{
+	width: 380px;
+	height: 222px;
+}
+
+
+
+table, td, th{
+    border:1px solid gray;
+}
+
+footer{
+    margin-top: 20px;
+    line-height: 1.5;
+    padding: 30px;
+}
+
+footer li{
+    list-style: none;
+}
+
+#footer_div{
+	display: flex;
+	justify-content:space-between;
+}
+
+#contacts{
+	order:2;
+}
+
+form{
+	width: 400px;
+	height: 310px;
+	background-color:#fff;
+    border-radius: 4px;
+    border: 1px solid #c9c9c9;
+}
+
+form #user_email{
+	width: 200px;
+	height:30px;
+	margin-left: 100px;
+}
+
+form #user_telephone{
+	width: 200px;
+	height:30px;
+	margin-left: 25px;
+}
+
+form #message{
+    width:200px;
+	margin-left: 163px;
+    height:70px;
+	margin-top:-40px;
+}
+
+form #button{
+	width: 100px;
+	height: 35px;
+	margin-left: 267px;
+	margin-top: -10px;
+	border-radius: 5px;
+}
+
+form h3{
+	margin-top: 15px;
+	margin-bottom: 30px;
+	margin-left:70px;
+}
+
+
+form label{
+	line-height: 47px;
+	margin-left: 20px;
+}
+
+#our_contacts{
+	order:initial;
+}
+
+#container{
+    width: 600px;
+    height: 350px;
+    background-color: dimgrey;
+    margin: auto;
+    margin-top:100px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    
+}
+
+#container .slaider li div img{
+    width: 600px;
+    height: 350px;
+}
+
+.slaider{
+	display: flex;
+    height: 350px;
+}
+
+.slaider  li{
+	float: left;
+	list-style: none;
+    height: 350px;
+    background-color: aquamarine;
+}
+
+#container .slaider {
+	margin-right: 600px;
+}
+
+.buttons{
+	width: 20px;
+}
+
+.buttons .prev{
+	margin-top:-200px;
+}
+
+.buttons .next{
+	margin-top: -61px;
+	margin-left: 535px;
+}
+.buttons >li{
+    cursor: pointer;
+    opacity: 0.4;
+}
+
+.buttons li img{
+    width: 60px;
+}
+
+.buttons >li:hover{
+    opacity: 1;
+}
