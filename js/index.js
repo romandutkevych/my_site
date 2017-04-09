@@ -71,12 +71,44 @@ $(function(){
 			function checkInput(){
 				form.find('.form_field').each(function(){
 					if($(this).val() != ''){
+						
 						$(this).removeClass('empty_field');
 					} else {
 						$(this).addClass('empty_field');
 					}
 				});
 			}
+			
+			 $('#user_email').blur(function() {
+        if($(this).val() != '') {
+            var pattern = /^([a-z0-9_\.-])+@[a-z0-9-]+\.([a-z]{2,4}\.)?[a-z]{2,4}$/i;
+            if(pattern.test($(this).val())){
+                $(this).css({'border' : '1px solid #569b44'});
+                $(this).removeClass('false_field');
+            } else {
+                $(this).css({'border' : '1px solid #ff0000'});
+                $(this).addClass('false_field');
+            }
+        } else {
+            $(this).addClass('false_field');
+        }
+    });
+    
+    
+			 $('#user_telephone').blur(function() {
+        if($(this).val() != '') {
+            var pattern = /[0-9]/;
+            if(pattern.test($(this).val())){
+                $(this).css({'border' : '1px solid #569b44'});
+                $(this).removeClass('false_field');
+            } else {
+                $(this).css({'border' : '1px solid #ff0000'});
+                $(this).addClass('false_field');
+            }
+        } else {
+            $(this).addClass('false_field');
+        }
+    });
 			
 			// Функция подсветки незаполненных полей
 			function lightEmpty(){
@@ -89,11 +121,12 @@ $(function(){
 			setInterval(function(){
 				checkInput();
 				var sizeEmpty = form.find('.empty_field').size();
-				if(sizeEmpty > 0){
+				var sizeFalse = form.find('.false_field').size();
+				if((sizeEmpty > 0)||(sizeFalse >0)){
 					
 					btn.addClass('disabled');
 				}else{
-					btn.removeClass('disabled')
+					btn.removeClass('disabled');
 				}
 			},500);
 
