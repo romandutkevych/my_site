@@ -168,7 +168,9 @@ $(function() {
                 return false;
             }else {
             sendForm();
-            alert("Дякуємо що повідомили нас")
+            alert("Дякуємо що повідомили нас");
+            $('.form_field').val('').removeAttr('style');
+            $('#message').val('');
             return false;
             }
         });
