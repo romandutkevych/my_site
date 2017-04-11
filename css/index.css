@@ -42,7 +42,6 @@ nav {
 nav ul{
 	display: flex;
 	justify-content:center;
-	display: block;
 }
 
 nav li {
